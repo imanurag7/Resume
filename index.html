@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Wallmart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="https://www.walmart.com/">
+                <img src="/Walmart/walmartLogo.svg" alt="none">
+            </a>
+
+        </div>
+
+
+        <div class="dropdown">
+            <i class="fa-solid fa-list">
+            <button onclick="myFunction()" class="dropbtn">Departments</button> </i>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">All Departments</a>
+                <a href="#about">Savings & Featured Shops</a>
+                <a href="#contact">Grocery</a>
+                <a href="#home">Electronics</a>
+                <a href="#about">Clothing,Shoes & Accessories</a>
+                <a href="#contact">Toys & Video Games</a>
+                <a href="#home">Home Improvement</a>
+                <a href="#about">Office & School Supplies</a>
+                <a href="#contact">Baby</a>
+            </div>
+        </div>
+        <div class="services">
+            <i class="fa-solid fa-list">
+                <button onclick="myFunction()" class="dropbtn">Services</button> </i>
+            <div id="myDropdown" class="services-content">
+                <a href="#home">All Departments</a>
+                <a href="#about">Savings & Featured Shops</a>
+                <a href="#contact">Grocery</a>
+                <a href="#home">Electronics</a>
+                <a href="#about">Clothing,Shoes & Accessories</a>
+                <a href="#contact">Toys & Video Games</a>
+                <a href="#home">Home Improvement</a>
+                <a href="#about">Office & School Supplies</a>
+                <a href="#contact">Baby</a>
+            </div>
+        </div>
+
+        <input type="search" aria-label="Search" aria-activedescendant="" class="b--none f5 flex-auto lh-solid sans-serif br-pill" name="q" placeholder="Search everything at Walmart online and in store" style="height: 40px; padding-left: 1rem; width: 30%; padding-right: 2.5rem; margin-left: 10px;"
+            aria-autocomplete="list" aria-haspopup="listbox" autocomplete="off" value="" data-automation-id="header-input-search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <div class="dropdown">
+            <i class="fa-regular fa-heart"></i>
+            <button onclick="myFunction()" class="dropbtn">Reorder</button> </i>
+
+        </div>
+        <div class="services">
+            <i class="fa-solid fa-user">
+                <button onclick="myFunction()" class="dropbtn">Signin <br> Account</button> </i>
+            </i>
+            <div class="services">
+                <i class="fa-thin fa-cart-shopping"></i>
+
+    </header>
+    <div class="div2">
+        <div>
+
+            <img loading="lazy" alt=" " src="https://i5.walmartimages.com/dfw/4ff9c6c9-ad46/k2-_0a671c38-d307-447c-835e-7904ab143c26.v1.png" width="26" height="26" aria-hidden="true" class="mr2 br-100 v-btm"> How Do you Want Your Items?
+        </div>
+        <div class="container">
+            <div>Grocery</div>
+            <div>Tech</div>
+            <div>Fashion</div>
+            <div>Appliances</div>
+            <div>Baby Days</div>
+
+        </div>
+
+
+    </div>
+    <script>
+        background - color: rgb(14, 117, 235);
+        /* When the user clicks on the button, 
+                                                                                                                                                                                                                                                                                                                toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
